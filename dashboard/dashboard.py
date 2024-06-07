@@ -20,7 +20,7 @@ st.header('Proyek Akhir Dicoding: Bike Sharing Dataset Analysis 🚲🔍')
 
 #Perkembangan peminjaman sepeda tahun 2011
 st.subheader('Perkembangan Peminjaman Sepeda Tahun 2011')
-df1 = pd.read_csv("perkembangan2011.csv")
+df1 = pd.read_csv("dashboard/perkembangan2011.csv")
 
 total_peminjaman_1 = df1["count"].sum()
 st.metric("Total Peminjaman Sepeda Tahun 2011", value=total_peminjaman_1)
@@ -42,7 +42,7 @@ st.pyplot(fig)
 
 # Perkembangan Peminjaman Sepeda Tahun 2012
 st.subheader('Perkembangan Peminjaman Sepeda Tahun 2012')
-df2 = pd.read_csv("perkembangan2012.csv")
+df2 = pd.read_csv("dashboard/perkembangan2012.csv")
 
 total_peminjaman_2 = df2["count"].sum()
 st.metric("Total Peminjaman Sepeda Tahun 2012", value=total_peminjaman_2)
@@ -66,7 +66,7 @@ st.pyplot(fig)
 
 #Dampak Cuaca Terhadap Peminjaman Sepeda Selama 2 Tahun
 st.subheader("Dampak Cuaca Terhadap Peminjaman Sepeda Selama 2 Tahun")
-df3 = pd.read_csv("dampakcuaca.csv")
+df3 = pd.read_csv("dashboard/dampakcuaca.csv")
 
 col1, col2, col3 = st.columns(3)
 
